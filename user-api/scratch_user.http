@@ -1,0 +1,49 @@
+### 회원가입(고객)
+POST http://localhost:8081/signup/customer
+Content-Type: application/json
+
+{
+  "birth": "1992-11-26",
+  "email": "9hjcho2@gmail.com",
+  "name": "myName",
+  "password": "pw",
+  "phone": "01000000000"
+}
+
+### 이메일 인증 (고객)
+GET http://localhost:8081/signup/customer/verify?email=9hjcho2@gmail.com&code=8epAvEAcZb
+
+
+### 로그인 (고객)
+POST http://localhost:8081/signin/customer
+
+{
+  "email": "9hjcho2@gmail.com",
+  "password": "pw",
+}
+
+### 회원 정보 조회 (고객)
+POST http://localhost:8081/customer/getInfo
+Content-Type: application/json
+X-AUTH-TOKEN:
+
+### 잔액 조회 (고객)
+POST http://localhost:8081/customer/balance
+Content-Type: application/json
+X-AUTH-TOKEN:
+
+{
+  "from": "server",
+  "message": "돈 충전",
+  "money": 50000
+}
+
+#################################
+
+### 회원 가입 (셀러)
+
+
+### 로그인 (셀러)
+
+
+### 회원 정보
