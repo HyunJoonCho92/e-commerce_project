@@ -14,3 +14,15 @@ X-AUTH-TOKEN:
   ],
   "name": "나이키 에어포스"
 }
+
+### 상품 아이템 추가
+POST http://localhost:8082/seller/product/item
+Content-Type: application/json
+X-AUTH-TOKEN:
+
+{
+      "productId": 1,
+      "count": 1,
+      "name": "270",
+      "price": 100000
+}
