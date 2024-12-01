@@ -23,10 +23,10 @@ public class ProductItem extends BaseEntity{
 
     private Long sellerId;
 
-    @Audited
+//    @Audited
     private String name;
 
-    @Audited
+//    @Audited
     private Integer price;
 
     private Integer count;

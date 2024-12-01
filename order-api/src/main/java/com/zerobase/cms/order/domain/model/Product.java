@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Audited
+//@Audited
 @AuditOverride(forClass = BaseEntity.class)
 public class Product extends BaseEntity {
     @Id
