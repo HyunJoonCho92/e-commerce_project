@@ -20,14 +20,12 @@ public class SellerProductController {
     @PostMapping
     public ResponseEntity<ProductDto> addProduct(@RequestHeader(name = "X-AUTH-TOKEN") String token,
                                            @RequestBody AddProductForm form) {
-
         return ResponseEntity.ok(ProductDto.from(productService.addProduct(provider.getUserVo(token).getId(), form)));
     }
 
     @PostMapping("/item")
     public ResponseEntity<ProductDto> addProductItem(@RequestHeader(name = "X-AUTH-TOKEN") String token,
                                                      @RequestBody AddProductItemForm form) {
-
         return ResponseEntity.ok(ProductDto.from(productItemService.addProductItem(provider.getUserVo(token).getId(), form)));
     }
 
